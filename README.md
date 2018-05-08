@@ -8,7 +8,7 @@ You can start using this boilerplate after the following steps:
 
 ```sh
 # Clone this repository
-git clone https://github.com/oliveirarthur/docker-boilerplate.git
+git clone -b php https://github.com/oliveirarthur/docker-boilerplate.git
 
 # Config the 'public' folder according to your project inside the 'vhost.conf' file
 vim vhost.conf

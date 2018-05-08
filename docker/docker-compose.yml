@@ -9,9 +9,7 @@ services:
     working_dir: /var/www
     volumes:
       - ../src:/var/www
-    environment:
-      DB_PORT: 3306
-      DB_HOST: database
+    env_file: app-php/.env
 
   web:
     build: web
@@ -23,11 +21,7 @@ services:
     build: database-mysql
     volumes:
       - dbdata:/var/lib/mysql
-    environment:
-      MYSQL_DATABASE: homestead
-      MYSQL_USER: homestead
-      MYSQL_PASSWORD: secret
-      MYSQL_ROOT_PASSWORD: secret
+    env_file: database-mysql/.env
     ports:
       - "33061:3306"
 
