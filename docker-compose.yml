@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  node-lts:
+    build: .
+    ports:
+      - 5000:5000
+    volumes:
+      - ./node-lts:/app
+    working_dir: /app

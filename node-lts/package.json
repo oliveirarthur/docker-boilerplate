@@ -1,0 +1,9 @@
+{
+  "name": "node-lts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/oliveirarthur/docker-boilerplate",
+  "author": "Arthur Oliveira <arthur.oliveira@hotmail.com.br>",
+  "license": "MIT",
+  "private": true
+}
